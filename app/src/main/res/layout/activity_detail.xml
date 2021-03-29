@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#FF9800">
+
+        <TextView
+            android:id="@+id/capital_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:text="Capital :-" />
+
+        <TextView
+            android:id="@+id/capital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10px"
+            android:layout_toRightOf="@id/capital_name"
+            android:text="value" />
+
+        <TextView
+            android:id="@+id/subregion_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/capital_name"
+            android:layout_margin="10px"
+            android:text="Sub-Region :-" />
+
+        <TextView
+            android:id="@+id/subregion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/capital"
+            android:layout_margin="10px"
+            android:layout_toRightOf="@+id/subregion_name"
+            android:text="Value" />
+
+        <TextView
+            android:id="@+id/region_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subregion_name"
+            android:layout_margin="10px"
+            android:text="Region:- " />
+
+        <TextView
+            android:id="@+id/region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subregion"
+            android:layout_margin="10px"
+            android:layout_toRightOf="@id/region_name"
+            android:text="Asia" />
+
+        <TextView
+            android:id="@+id/population_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/region_name"
+            android:layout_margin="10px"
+            android:text="Population" />
+
+        <TextView
+            android:id="@+id/population"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/region"
+            android:layout_margin="10px"
+            android:layout_toRightOf="@id/population_name"
+            android:text="Value" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Borders:- "
+            android:layout_margin="10px"
+            android:id="@+id/borders_name"
+            android:layout_below="@+id/population"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/borders_name"
+            android:layout_margin="10px"
+            android:layout_below="@+id/population"
+            android:text="Value"
+            android:id="@+id/borders"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Languages:- "
+            android:layout_margin="10px"
+            android:id="@+id/languages_name"
+            android:layout_below="@id/borders"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Value"
+            android:layout_margin="10px"
+            android:id="@+id/languages"
+            android:layout_below="@id/borders"
+            android:layout_toRightOf="@+id/languages_name"
+            />
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="80sp"
+            android:id="@+id/imageview"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+</RelativeLayout>
